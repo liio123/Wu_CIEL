@@ -148,7 +148,7 @@ for train_idx, test_idx in kfold.split(MyDataset):
         if (total_test_acc / test_len) > min_acc:
             min_acc = total_test_acc / test_len
             # res_TP_TN_FP_FN = TP_TN_FP_FN
-            torch.save(model.state_dict(), 'G:\吴老师的论文/2025NIPS\保存的模型\DEAP/arousal/1.pth')
+            torch.save(model.state_dict(), 'G:\XXX/2025NIPS\保存的模型\DEAP/arousal/1.pth')
 
         # print result
         print("Epoch: {}/{} ".format(epoch + 1, num_epochs),
