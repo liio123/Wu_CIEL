@@ -12,10 +12,6 @@ data_pcc_list = os.listdir(data_pcc_dir)
 data_de_list.sort(key=lambda x: x.split('.')[0])
 data_pcc_list.sort(key=lambda x: x.split('.')[0])
 
-# 第i个被试作为测试集
-i = 0
-
-# 划分训练集和测试集
 X_de_test = np.load(data_de_dir+data_de_list[i]).astype(np.float32)
 X_pcc_test = np.load(data_pcc_dir+data_pcc_list[i]).astype(np.float32)
 X_de_test = torch.tensor(X_de_test, dtype=torch.float32)
