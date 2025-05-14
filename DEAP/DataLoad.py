@@ -5,8 +5,8 @@ from torch.utils.data import DataLoader, TensorDataset, Subset
 from sklearn.model_selection import KFold
 
 # 加载数据
-data_de_dir = 'G:\吴老师的论文/2025NIPS\DEAP特征\DE/'
-data_pcc_dir = 'G:\吴老师的论文/2025NIPS\DEAP特征\PCC/'
+data_de_dir = 'G:\XXX/2025NIPS\DEAP特征\DE/'
+data_pcc_dir = 'G:\XXX/2025NIPS\DEAP特征\PCC/'
 data_de_list = os.listdir(data_de_dir)
 data_pcc_list = os.listdir(data_pcc_dir)
 data_de_list.sort(key=lambda x: x.split('.')[0])
@@ -40,7 +40,7 @@ X_pcc_test = torch.tensor(X_pcc_test, dtype=torch.float32)
 # X_pcc_train = torch.tensor(X_pcc_train, dtype=torch.float32)
 # print(X_pcc_train.shape)
 
-labels = np.load("G:\吴老师的论文/2025NIPS\DEAP特征/label/dominance/all.npy")
+labels = np.load("G:\XXX/2025NIPS\DEAP特征/label/dominance/all.npy")
 
 # Y_train = np.concatenate((labels[0:i*400,:],labels[(i+1)*400:,:]),axis=0)
 # Y_train = torch.tensor(Y_train, dtype=torch.int64).squeeze_(1)
